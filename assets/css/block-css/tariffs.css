@@ -1,0 +1,118 @@
+.tariffs .advantages-block {
+	width: calc(1/3*100% - (1 - 1/3)*15px);
+}
+
+.tariffs .advantages-block {
+	gap: 12px;
+	min-height: 600px;
+}
+
+.tariffs .advantages-block__extra-title p {
+	padding-bottom: 10px;
+}
+
+.tariffs .advantages-block__extra-title p:last-child {
+	padding-bottom: 0;
+}
+
+@media(max-width: 1024px) {
+	.tariffs .advantages-block {
+		min-height: 500px;
+	}
+	
+	.tariffs .advantages-block .number {
+		font-size: 80px;
+		line-height: 60px;
+	}
+	
+	.tariffs .advantages-block ul li {
+		font-size: 16px;
+		line-height: 20px;
+	}
+}
+
+@media(max-width: 767px) {
+	.tariffs .advantages-block {
+		width: 100%;
+		min-height: 320px;
+	}
+	
+	.tariffs .advantages-block ul {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	
+	.tariffs .advantages-block .number {
+		font-size: 80px;
+		line-height: 60px;
+		margin-bottom: 16px;
+	}
+}
+
+.tariffs__list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+
+.tariffs__block {
+	gap: 20px;
+	display: flex;
+	flex-direction: column;
+	width: calc(1/3*100% - (1 - 1/3)*15px);
+	border-radius: var(--border-radius-m);
+	background-color: var(--gray-silver);
+	padding: 30px 20px;
+	position: relative;
+	-webkit-transition: all .3s;
+    transition: all .3s;
+	min-width: 333px;
+}
+
+.tariffs__block .tariffs__block-title {
+	font-size: 80px;
+	line-height: 60px;
+	letter-spacing: -0.1em;
+	font-weight: 100;
+}
+
+.tariffs__block .tariffs__block-text ul {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.tariffs__block .tariffs__block-text ul li {
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.tariffs__block-price {
+	font-size: 18px;
+	line-height: 22px;
+	background: var(--color-white);
+	padding: 6px 10px;
+	border-radius: 16px;
+	width: fit-content;
+	color: var(--color-black);
+}
+
+.tariffs__block .tariffs__block-text ul li {
+    position: relative;
+	padding-left: 27px;
+}
+
+.tariffs__block .tariffs__block-text ul li:before {
+    width: 6px;
+    height: 6px;
+    background: var(--color-black);
+    border-radius: 50%;
+    content: '';
+    position: absolute;
+	top: 10px;
+    left: 10px;
+}
+
+.tariffs__block>div:last-child {
+	margin-top: auto;
+}
